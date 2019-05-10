@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8117.6265,47.098793,9679.2021};
-		dir[]={-0.6639421,-0.67070758,-0.33090243};
-		up[]={-0.60030961,0.74170291,-0.29918629};
-		aside[]={-0.44609445,-6.4820051e-007,0.89506721};
+		pos[]={8027.269,86.575638,10172.215};
+		dir[]={-0.0079965433,-0.53764576,0.84316444};
+		up[]={-0.0050987098,0.84315675,0.53764492};
+		aside[]={0.99998009,-3.7356222e-007,0.0094834371};
 	};
 };
 binarizationWanted=0;
@@ -422,10 +422,10 @@ class ScenarioData
 	author="-10K-";
 	overviewText="S7 Training map remake." \n "Due to broken maps and annoyed player base." \n "By -10K-";
 	overviewTextLocked="S7 Training map remake." \n "Due to broken maps and annoyed player base." \n "By -10K-";
-	overViewPicture="S71.Jpg";
-	overViewPictureLocked="S71.Jpg";
+	overViewPicture="pictures\S71.Jpg";
+	overViewPictureLocked="pictures\S71.Jpg";
 	onLoadMission="S7 Training map remake." \n "For the times when our maps worked.";
-	loadScreen="S71.Jpg";
+	loadScreen="pictures\S71.Jpg";
 	saving=0;
 	disabledAI=1;
 	respawn=3;
@@ -4396,7 +4396,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{[this,""Bounding end""] execVM ""TP.sqf"";}";
+				init="call{[this,""Bounding end""] execVM ""scripts\TP.sqf"";}";
 			};
 			id=673;
 			type="Land_ConcreteWall_02_m_pole_F";
@@ -5998,7 +5998,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{this setObjectTextureGlobal [0,""SS7.jpg""];}";
+				init="call{this setObjectTextureGlobal [0,""pictures\SS7.jpg""];}";
 			};
 			id=857;
 			type="UserTexture10m_F";
@@ -6020,7 +6020,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="SS7.jpg";
+							value="pictures\SS7.jpg";
 						};
 					};
 				};
@@ -6151,7 +6151,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="S71.jpg";
+							value="pictures\S71.jpg";
 						};
 					};
 				};
@@ -8241,7 +8241,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="S71.jpg";
+							value="pictures\S71.jpg";
 						};
 					};
 				};
@@ -13465,7 +13465,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="S71.jpg";
+							value="pictures\S71.jpg";
 						};
 					};
 				};
@@ -13958,7 +13958,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="S71.jpg";
+							value="pictures\S71.jpg";
 						};
 					};
 				};
@@ -17254,7 +17254,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {" \n "[this] execVM ""Guns.sqf"";" \n "};}";
+				init="call{if (isServer) then {" \n "[this] execVM ""scripts\Guns.sqf"";" \n "};}";
 			};
 			id=2219;
 			type="rhsusf_weapon_m9";
@@ -17271,7 +17271,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {" \n "[this] execVM ""Guns.sqf"";" \n "};}";
+				init="call{if (isServer) then {" \n "[this] execVM ""scripts\Guns.sqf"";" \n "};}";
 			};
 			id=2220;
 			type="rhs_weapon_M320";
@@ -17288,7 +17288,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {" \n "[this] execVM ""Guns.sqf"";" \n "};}";
+				init="call{if (isServer) then {" \n "[this] execVM ""scripts\Guns.sqf"";" \n "};}";
 			};
 			id=2221;
 			type="rhsusf_weapon_m1911a1";
@@ -17305,7 +17305,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {" \n "[this] execVM ""Guns.sqf"";" \n "};}";
+				init="call{if (isServer) then {" \n "[this] execVM ""scripts\Guns.sqf"";" \n "};}";
 			};
 			id=2222;
 			type="rhsusf_weapon_glock17g4";
@@ -17322,7 +17322,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {" \n "[this] execVM ""Guns.sqf"";" \n "};}";
+				init="call{if (isServer) then {" \n "[this] execVM ""scripts\Guns.sqf"";" \n "};}";
 			};
 			id=2227;
 			type="rhs_magazine_rhs_mag_M397_HET";
@@ -25112,7 +25112,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="S71.jpg";
+							value="pictures\S71.jpg";
 						};
 					};
 				};
