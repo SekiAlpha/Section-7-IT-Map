@@ -186,4 +186,6 @@ fnc_LoadPara = {
 	} forEach _Que;
 	ParaQ = [];
 	publicVariable "ParaQ";
-}
+};
+
+[] execVM "scripts\BasicLoadout.sqf";
