@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=145;
+		nextID=150;
 	};
 	class Camera
 	{
-		pos[]={8027.269,86.575638,10172.215};
-		dir[]={-0.0079965433,-0.53764576,0.84316444};
-		up[]={-0.0050987098,0.84315675,0.53764492};
-		aside[]={0.99998009,-3.7356222e-007,0.0094834371};
+		pos[]={8085.3047,44.239723,9679.4336};
+		dir[]={0.18684481,-0.75380349,-0.63002664};
+		up[]={0.21432929,0.65708947,-0.72270334};
+		aside[]={-0.95875686,-3.5273843e-007,-0.28433567};
 	};
 };
 binarizationWanted=0;
@@ -1521,7 +1521,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6990.0298,115.09258,10112.648};
+				position[]={6990.0298,115.09259,10112.648};
 			};
 			side="Empty";
 			flags=5;
@@ -1531,6 +1531,7 @@ class Mission
 			};
 			id=306;
 			type="Land_ConcreteWall_02_m_pole_F";
+			atlOffset=1.5258789e-005;
 		};
 		class Item53
 		{
@@ -5309,7 +5310,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {" \n "this setVariable [""Spawned"",[],true];  " \n "this setVariable [""Running"",0,true];  " \n "this setVariable [""Stop"",0,true];" \n "}; " \n "this addAction [""Stop"",{[_this select 0,""Stop""] execVM ""Range.sqf""}];   " \n "this addAction [""All LR"",{_T = [_this select 0,""All"",""VR_Area_01_square_2x2_grey_F""] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""All SR"",{_T = [_this select 0,""All"",""VR_Area_01_square_1x1_yellow_F""] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""Start LR"",{_T = [_this select 0,""Run"",""VR_Area_01_square_2x2_yellow_F"",_this select 1] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""Start SR"",{_T = [_this select 0,""Run"",""VR_Area_01_square_1x1_yellow_F"",_this select 1] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""Remove All"",{_T = [_this select 0,""Remove""] remoteExecCall [""scripts\Range.sqf"",0]}];   " \n "this addAction [""VRT 100M"",{Target setPosAtl (getPos (_this select 0) vectorAdd [0,-100,0])}];   " \n "this addAction [""VRT 200M"",{Target setPosAtl (getPos (_this select 0) vectorAdd [0,-200,0])}];   " \n "this addAction [""VRT 300M"",{Target setPos (getPos (_this select 0) vectorAdd [0,-300,10])}];   " \n "this addAction [""VRT 800M"",{Target setPos (getPos (_this select 0) vectorAdd [0,-800,50])}];   " \n "this addAction [""VRT Away"",{Target setPos (getPos (_this select 0) vectorAdd [0,0,-50])}];}";
+				init="call{if (isServer) then {" \n "this setVariable [""Spawned"",[],true];  " \n "this setVariable [""Running"",0,true];  " \n "this setVariable [""Stop"",0,true];" \n "}; " \n "this addAction [""Stop"",{[_this select 0,""Stop""] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""All LR"",{_T = [_this select 0,""All"",""VR_Area_01_square_2x2_grey_F""] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""All SR"",{_T = [_this select 0,""All"",""VR_Area_01_square_1x1_yellow_F""] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""Start LR"",{_T = [_this select 0,""Run"",""VR_Area_01_square_2x2_yellow_F"",_this select 1] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""Start SR"",{_T = [_this select 0,""Run"",""VR_Area_01_square_1x1_yellow_F"",_this select 1] execVM ""scripts\Range.sqf""}];   " \n "this addAction [""Remove All"",{_T = [_this select 0,""Remove""] remoteExecCall [""scripts\Range.sqf"",0]}];   " \n "this addAction [""VRT 100M"",{Target setPosAtl (getPos (_this select 0) vectorAdd [0,-100,0])}];   " \n "this addAction [""VRT 200M"",{Target setPosAtl (getPos (_this select 0) vectorAdd [0,-200,0])}];   " \n "this addAction [""VRT 300M"",{Target setPos (getPos (_this select 0) vectorAdd [0,-300,10])}];   " \n "this addAction [""VRT 800M"",{Target setPos (getPos (_this select 0) vectorAdd [0,-800,50])}];   " \n "this addAction [""VRT Away"",{Target setPos (getPos (_this select 0) vectorAdd [0,0,-50])}];}";
 			};
 			id=794;
 			type="Land_PhoneBooth_01_F";
