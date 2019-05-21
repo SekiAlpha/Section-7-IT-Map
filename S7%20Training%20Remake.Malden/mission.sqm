@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7992.0513,61.358356,9921.7363};
-		dir[]={-0.18045285,-0.28756097,0.94065124};
-		up[]={-0.054185919,0.95775092,0.28245932};
-		aside[]={0.98212993,-2.924935e-007,0.18840998};
+		pos[]={7960.2808,89.44899,10243.204};
+		dir[]={0.69534481,-0.52529484,-0.49061885};
+		up[]={0.42924964,0.85089463,-0.30286971};
+		aside[]={-0.57655257,-7.3935371e-007,-0.8171401};
 	};
 };
 binarizationWanted=0;
@@ -1212,7 +1212,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{if (isServer) then {" \n "[this,""AT range""] execVM ""scripts\TP.sqf"";" \n "};}";
+				init="call{[this,""AT range""] execVM ""scripts\TP.sqf"";" \n "}";
 			};
 			id=263;
 			type="Land_ConcreteWall_02_m_pole_F";
