@@ -8,3 +8,8 @@ author			= "-10K-";
 OnLoadName		= "Training Remake";
 OnLoadMission	= "Welcome to IT recruits enjoy your stay and dont piss off peterson.";
 loadScreen		= "pictures\S71.jpg";
+#include "CHVD\dialog.hpp"
+class CfgFunctions
+{
+	#include "CHVD\CfgFunctions.hpp"
+};
