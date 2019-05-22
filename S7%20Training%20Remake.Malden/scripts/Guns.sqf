@@ -30,7 +30,7 @@ _SObj = typeOf _Obj createVehicle _Pos;
 };
 _SObj setDamage 1;
 
-[[_SObj,_Obj],"fnc_GunTake",true,true] spawn BIS_fnc_MP;
+[_SObj,_Obj] remoteExec ["fnc_GunTake",0,true] spawn BIS_fnc_MP;
 
 sleep (1);
 _Obj setPos [10,0,10];
@@ -39,5 +39,4 @@ _SObj setDir getDir _Obj;
 _SObj setVectorUp vectorUp _Obj;
 _SObj setVectorDir vectorDir _Obj;
 _SObj setDir getDir _Obj;
-_SObj setOwner 0;
  

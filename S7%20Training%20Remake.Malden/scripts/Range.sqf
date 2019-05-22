@@ -41,15 +41,15 @@ if (_Run == "Run") then {
 			sleep (1);
 		} forEach [10,9,8,7,6,5,4,3,2,1];
 	};
-	
+	hint (name _Pl + ": Starting rifle qual");
 	while {_Con == 0} do {
 		_C = _Phone getVariable "Stop";
-		if (_Index>19) then {_C = 1; [("Hit "+str _HitA+"/20")] remoteExec ["fnc_Com",0]};
+		if (_Index>19) then {_C = 1; [(name _Pl + ": Hit "+str _HitA+"/20")] remoteExec ["fnc_Com",0]};
 		if (_C == 0) then {
-		_R = round random (count _Array);
+		_R = floor random (count _Array);
 		_S = (_Array select _R);
 		if (isNil "_S") then {
-			_R = round random (count _Array);
+			_R = floor random (count _Array);
 			_S = (_Array select _R)
 		};
 		_unit = (_group createUnit ["I_C_Soldier_Bandit_4_F", getPos _S, [], _Phone getDir getPos _S , "Form"]);
