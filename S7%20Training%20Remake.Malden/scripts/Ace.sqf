@@ -6,39 +6,36 @@ if (isServer) then {
 	_Obj setVariable ["NPC",[],true];
 	_Obj setVariable ["Damage",0,true];
 	_Obj setVariable ["Loadout",[[],[],[],["U_C_Poloshirt_stripped",[]],[],[],"H_Cap_tan","",[],["ItemMap","","","ItemCompass","ItemWatch",""]],true];
-	_Grp = createGroup [Civilian, false];
-	_Grp setGroupId ["ACE GROUP"];
-	_Obj setVariable ["Grp",_Grp,true];
 };
+
+_Obj addAction ["Remove",{
+	_Obj = _this select 0;
+	_NPC = _Obj getVariable "NPC";
+	{
+		deleteVehicle _x;
+	} forEach _NPC;
+	_Obj setVariable ["NPC",[],true];
+}];
 
 _Obj addAction ["Reset",{
 	_Obj = _this select 0;
 	_Array = _Obj getVariable "Array";
-	_Grp = _Obj getVariable "Grp";
+	_NPC = _Obj getVariable "NPC";
 	{
 		deleteVehicle _x;
-	} forEach units _Grp;
+	} forEach _NPC;
 	
 	_NPC = [];
 	
 	{
 		_unit = "C_man_1" createVehicle getPosATL _x;
+		_unit setPos getPos _x;
 		_unit setUnitLoadout (_Obj getVariable "Loadout");
-		[_unit] joinSilent _Grp;
 		_NPC = _NPC + [_unit];
 		_unit disableAI "ALL";
 	} forEach _Array;
 	
 	_Obj setVariable ["NPC",_NPC,true];
-}];
-
-_Obj addAction ["Remove",{
-	_Obj = _this select 0;
-	_Grp = _Obj getVariable "Grp";
-	{
-		deleteVehicle _x;
-	} forEach units _Grp;
-	_Obj setVariable ["NPC",[],true];
 }];
 
 _Obj addAction ["Copy loadout",{

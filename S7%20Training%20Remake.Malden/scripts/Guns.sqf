@@ -30,6 +30,7 @@ _SObj = typeOf _Obj createVehicle _Pos;
 _SObj setDamage 1;
 
 [_SObj,_Obj] remoteExec ["fnc_GunTake",0,true] spawn BIS_fnc_MP;
+
 _Obj setPos [10,0,10];
 _SObj setPos _Pos;
 _SObj setDir getDir _Obj;
