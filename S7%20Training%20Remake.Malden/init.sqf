@@ -72,7 +72,7 @@ fnc_GunTake = {
 			_count = _counts select _forEachIndex;
 			_Pl addItemCargoGlobal [_item, _count];
 		} foreach _items;
-}];
+	}];
 
 };
 

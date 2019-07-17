@@ -1,5 +1,4 @@
 _Obj = _this select 0;
-sleep (1);
 removeAllActions _Obj;
 _TStri = typeOf _Obj;
 _Text = getText (configFile >> "CfgVehicles" >> _TStri >> "displayName");
@@ -31,8 +30,6 @@ _SObj = typeOf _Obj createVehicle _Pos;
 _SObj setDamage 1;
 
 [_SObj,_Obj] remoteExec ["fnc_GunTake",0,true] spawn BIS_fnc_MP;
-
-sleep (1);
 _Obj setPos [10,0,10];
 _SObj setPos _Pos;
 _SObj setDir getDir _Obj;

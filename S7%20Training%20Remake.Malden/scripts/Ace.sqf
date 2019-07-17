@@ -8,7 +8,7 @@ if (isServer) then {
 	_Obj setVariable ["Loadout",[[],[],[],["U_C_Poloshirt_stripped",[]],[],[],"H_Cap_tan","",[],["ItemMap","","","ItemCompass","ItemWatch",""]],true];
 	_Grp = createGroup [Civilian, false];
 	_Grp setGroupId ["ACE GROUP"];
-	_Obj setVariable ["Grp",_Grp];
+	_Obj setVariable ["Grp",_Grp,true];
 };
 
 _Obj addAction ["Reset",{
