@@ -11,9 +11,6 @@ if (isServer) then {
 _Obj addAction ["Training mines",{
 	_this select 0 setVariable ["Mine","TrainingMine_01_F",true];
 }];
-_Obj addAction ["AT mines",{
-	_this select 0 setVariable ["Mine","Mine_ATMine_F",true];
-}];
 _Obj addAction ["APERS mines",{
 	_this select 0 setVariable ["Mine","Mine_APERSMine_F",true];
 }];
@@ -46,10 +43,5 @@ _Obj addAction ["500 mines",{
 }];
 
 
-_Obj addAction ["Remove mines",{
-	_this remoteExecCall ["FMR",2];
-}];
-
-_Obj addAction ["Spawn mines",{
-	_this remoteExecCall ["FMP",2];
-}];
+_Obj addAction ["Remove mines","fnc_FMR"];
+_Obj addAction ["Spawn mines","fnc_FMP"];

@@ -8,7 +8,7 @@ if (RHSR) then {
 };
 
 if (isServer) then {
-	_Tar = "VR_Area_01_circle_4_grey_F" createVehicle ((getPos _Node) vectorAdd [50,0,0]);
+	_Tar = ("VR_Area_01_circle_4_grey_F" createVehicle ((getPos _Node) vectorAdd [50,0,0]));
 	_Node setVariable ["Tar",_Tar,true];
 };
 
