@@ -8,7 +8,7 @@ class EditorData
 	toggles=37;
 	class ItemIDProvider
 	{
-		nextID=17557;
+		nextID=17560;
 	};
 	class MarkerIDProvider
 	{
@@ -20,72 +20,15 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7961.5615,64.15358,10437.887};
-		dir[]={-0.031006537,-0.55175912,0.83343422};
-		up[]={-0.020513128,0.83400381,0.55137825};
-		aside[]={0.99931437,6.047776e-008,0.037177749};
+		pos[]={7909.833,88.356468,9766.6582};
+		dir[]={0.51338708,-0.20821899,0.83251363};
+		up[]={0.1092926,0.97808206,0.17723009};
+		aside[]={0.85116971,-1.4319085e-008,-0.52489144};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Modules_F_Multiplayer",
-	"A3_Structures_F_Bootcamp_VR_CoverObjects",
-	"A3_Structures_F_Training",
-	"A3_Supplies_F_Heli_CargoNets",
-	"A3_Structures_F_Bootcamp_VR_Helpers",
-	"A3_Structures_F_Exp_Walls_Concrete",
-	"A3_Ui_F",
-	"A3_Armor_F_Beta_APC_Tracked_01",
-	"ace_realisticnames",
-	"ace_rearm",
-	"ace_refuel",
-	"ace_repair",
-	"A3_Structures_F_Mil_Fortification",
-	"A3_Characters_F",
-	"A3_Structures_F_Mil_BagFence",
-	"A3_Modules_F_Curator_Curator",
-	"A3_Structures_F_Civ_InfoBoards",
-	"A3_Structures_F_EPB_Civ_Accessories",
-	"A3_Modules_F",
-	"A3_Misc_F_Helpers",
-	"A3_Structures_F_EPA_Civ_Camping",
-	"A3_Structures_F_Argo_Signs_Warnings",
-	"ace_gforces",
-	"ace_parachute",
-	"A3_Structures_F_Civ_Camping",
-	"acex_sitting",
-	"rhsusf_c_melb",
-	"ace_compat_rhs_usf3",
-	"RHS_US_A2_AirImport",
-	"rhsusf_c_weapons",
-	"A3_Weapons_F",
-	"ace_medical",
-	"A3_Weapons_F_Tank",
-	"A3_Weapons_F_Tank_Launchers_MRAWS",
-	"A3_Weapons_F_Ammoboxes",
-	"A3_Structures_F_Ind_AirPort",
-	"A3_Structures_F_Mil_Helipads",
-	"A3_Structures_F_Walls",
-	"A3_Structures_F_Mil_BagBunker",
-	"A3_Soft_F_Beta_Truck_02",
-	"ace_dragging",
-	"A3_Supplies_F_Exp_Ammoboxes",
-	"A3_Structures_F_Mil_Flags",
-	"A3_Structures_F_Wrecks",
-	"CUP_CAStructures_E_Misc_Misc_Construction",
-	"A3_Structures_F_Civ_Market",
-	"A3_Structures_F_Bootcamp_Training",
-	"A3_Structures_F_EPC_Dominants_GhostHotel",
-	"ace_mk6mortar",
-	"A3_Supplies_F_Heli_Fuel",
-	"A3_Soft_F_Quadbike_01",
-	"ace_cargo",
-	"CUP_Misc_e_Config",
-	"A3_Structures_F_Heli_Ind_Machines",
-	"Kimi_HMDs_RHS",
-	"Kimi_HMDs_RHS_UI_Optional",
-	"adv_aceCPR"
 };
 class AddonsMetaData
 {
@@ -1296,7 +1239,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1163;
+		items=1164;
 		class Item0
 		{
 			dataType="Logic";
@@ -72584,6 +72527,201 @@ class Mission
 			};
 			id=17556;
 			type="VR_3DSelector_01_default_F";
+		};
+		class Item1163
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8091.5981,29.614929,9672.5732};
+				angles[]={0.0015358897,0,0};
+			};
+			areaSize[]={1,-1,1};
+			id=17557;
+			type="ModuleEditTerrainObject_F";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#name";
+					expression="_this setVariable [""#name"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="#initServer";
+					expression="_this setVariable [""#initServer"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="#state";
+					expression="_this setVariable [""#state"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=5;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="#allowDamage";
+					expression="_this setVariable [""#allowDamage"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="#doorStates";
+					expression="_this setVariable [""#doorStates"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=3;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="#init";
+					expression="_this setVariable [""#init"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=7;
+			};
 		};
 	};
 	class Connections
