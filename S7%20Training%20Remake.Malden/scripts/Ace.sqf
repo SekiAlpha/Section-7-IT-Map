@@ -1,7 +1,9 @@
-_Obj = _this select 0;
+_Array = synchronizedObjects (_this select 0);
+_Obj = (_Array select {typeOf _x == "VR_3DSelector_01_default_F"}) select 0;
+_Array = _Array select {typeOf _x != "VR_3DSelector_01_default_F"};
 sleep (0.1);
+
 if (isServer) then {
-	_Array = _Obj nearObjects ["VR_3DSelector_01_incomplete_F",100];
 	_Obj setVariable ["Array",_Array,true];
 	_Obj setVariable ["NPC",[],true];
 	_Obj setVariable ["Damage",0,true];

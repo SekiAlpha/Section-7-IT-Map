@@ -35,7 +35,7 @@ _Obj addAction ["Delete nearest vehicle",{
 		if !(isNil "_Del") then {
 			_Text = getText (configFile >> "CfgVehicles" >> (typeOf _Del) >> "displayName");
 			deleteVehicle _Del;
-			[name _Player+" has deleted a "+_Text,"systemChat",false,false] call BIS_fnc_MP;
+			[name _Player+" has deleted a "+_Text] remoteExec ["fnc_Com",0];
 		};
 	};
 }];
@@ -62,7 +62,7 @@ _Obj addAction ["Delete nearest vehicle",{
 				sleep (0.1);
 				_Veh setDir (getDir _Obj);
 				_Text = getText (configFile >> "CfgVehicles" >> (typeOf _Veh) >> "displayName");
-				[name _Player+" has spawned a "+_Text,"systemChat",false,false] call BIS_fnc_MP;
+				[name _Player+" has spawned a "+_Text] remoteExec ["fnc_Com",0];
 			} else {
 				hint "Cannot place area full";
 			};

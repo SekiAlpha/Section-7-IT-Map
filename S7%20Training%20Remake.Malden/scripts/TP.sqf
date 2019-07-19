@@ -3,6 +3,8 @@ _Pole = _this select 0;
 _Name = _this select 1;
 _Pole setVariable ["Name",_Name];
 
+_Pole addAction ["Heal Yourself",{[objNull, _this select 1] call ace_medical_fnc_treatmentAdvanced_fullHeal}]; 
+
 {
 	_A = _x addAction ["Go to "+_Name,{
 		_Obj = _this select 0;

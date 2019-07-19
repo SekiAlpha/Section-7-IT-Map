@@ -12,11 +12,13 @@ if (isServer) then {
 	_Node setVariable ["Tar",_Tar,true];
 };
 
-_Node addAction ["50M",{_Node = _this select 0;_Tar = _Node getVariable "Tar";_Tar setPos ((getPos _Node) vectorAdd [50,0,0])}];
-_Node addAction ["100M",{_Node = _this select 0;_Tar = _Node getVariable "Tar";_Tar setPos ((getPos _Node) vectorAdd [100,0,0])}];
-_Node addAction ["150M",{_Node = _this select 0;_Tar = _Node getVariable "Tar";_Tar setPos ((getPos _Node) vectorAdd [150,0,0])}];
-_Node addAction ["200M",{_Node = _this select 0;_Tar = _Node getVariable "Tar";_Tar setPos ((getPos _Node) vectorAdd [200,0,0])}];
-_Node addAction ["250M",{_Node = _this select 0;_Tar = _Node getVariable "Tar";_Tar setPos ((getPos _Node) vectorAdd [250,0,0])}];
+sleep 0.1;
+
+_Node addAction ["50M",{_this call fnc_Targetmove},50];
+_Node addAction ["100M",{_this call fnc_Targetmove},100];
+_Node addAction ["150M",{_this call fnc_Targetmove},150];
+_Node addAction ["200M",{_this call fnc_Targetmove},200];
+_Node addAction ["250M",{_this call fnc_Targetmove},250];
 
 {
 	_Text = getText (configFile >> "CfgVehicles" >> _x >> "displayName");
