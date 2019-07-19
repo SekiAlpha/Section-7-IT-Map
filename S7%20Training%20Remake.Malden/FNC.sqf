@@ -129,11 +129,11 @@ fnc_LoadPara = {//moves everyone into cargo on paradrop
 	publicVariable "ParaQ";
 };
 fnc_Targetmove = {//moves target on at range
-	_Node = _this select 0;
+	params ["_Node","_Caller","_ID","_Range"];
+	private ["_Tar"];
 	_Tar = _Node getVariable "Tar";
-	_Range = (_this select 3);
 	_Tar setPos ((getPos _Node) vectorAdd [_Range,0,0]);
-	hint format ["Move spawner "+str _Range+"M away",_this select 1];
+	hint format ["Moved spawner to "+str _Range+"M",_Caller];
 };
 fnc_RQStart = {//startes rifle qual
 	params ["_Phone","_Caller"];

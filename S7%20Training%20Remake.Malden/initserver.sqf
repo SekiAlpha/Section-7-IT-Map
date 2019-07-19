@@ -1,4 +1,5 @@
 ["Initialize"] call BIS_fnc_dynamicGroups;
+
 PA = [];
 TPN = [];
 TPA = [];

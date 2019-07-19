@@ -6,7 +6,7 @@ _Base = ((_Array1 select {typeOf _x == _Stri}) select 0);
 if (isServer) then {
 	_Obj setVariable ["Base",_Base];
 };
-sleep (0.1);
+sleep (4);
 
 _Obj addAction ["Delete nearest vehicle",{
 	params ["_Obj","_Caller"];
@@ -45,4 +45,5 @@ _Obj addAction ["Delete nearest vehicle",{
 			hint format ["Cannot place area full",_Caller];
 		};
 	},_x];
+	sleep (0.1);
 } forEach _Array;

@@ -8,8 +8,6 @@ if !(isMultiplayer) then {
 
 [] execVM "FNC.sqf";
 
-[] execVM "scripts\BasicLoadout.sqf";
-
 [true,10,false,true,30,10,true,[],["Helicopter"]] execVM "WerthlesHeadless.sqf";
 //CHVD_maxView = 7500;
 //CHVD_maxObj = 5000;

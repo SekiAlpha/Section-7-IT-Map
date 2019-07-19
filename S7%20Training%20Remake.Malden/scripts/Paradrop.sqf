@@ -1,6 +1,6 @@
 _Obj = _this select 0;
 
-sleep (0.1);
+sleep (2);
 
 removeAllActions _Obj;
 

@@ -3,6 +3,8 @@ _Phone = (_Array select {typeOf _x != "VR_Area_01_square_1x1_yellow_F"}) select 
 _Array = _Array select {typeOf _x == "VR_Area_01_square_1x1_yellow_F"};
 // do not put more than one "Phone" or objects other than "VR_Area_01_square_1x1_yellow_F"
 
+sleep (1);
+
 if (isServer) then {
 	{
 		_x hideObjectGlobal true;

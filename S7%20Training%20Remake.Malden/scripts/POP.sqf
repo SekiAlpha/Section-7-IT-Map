@@ -2,6 +2,8 @@ _Array = synchronizedObjects (_this select 0);
 _Obj = (_Array select {typeOf _x != "TargetP_Inf2_F"}) select 0;
 _Array = (_Array select {typeOf _x == "TargetP_Inf2_F"});
 
+sleep (1);
+
 _Obj addAction ["Activate auto pop-up",{
 	params ["_Obj","_Caller","_ID","_Array"];
 	{

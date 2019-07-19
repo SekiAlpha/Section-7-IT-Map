@@ -1,6 +1,7 @@
 params ["_Veh"];
 _Veh lock true; 
-_Veh enableSimulation false; 
+_Veh enableSimulation false;
+
 _Veh addAction ["Spawn",{
 	params ["_Veh","_Caller"]; 
 	_NVeh = typeOf _Veh createVehicle getPos _Veh; 

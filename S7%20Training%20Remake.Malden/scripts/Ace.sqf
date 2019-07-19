@@ -1,7 +1,7 @@
 _Array = synchronizedObjects (_this select 0);
 _Obj = (_Array select {typeOf _x == "VR_3DSelector_01_default_F"}) select 0;
 _Array = _Array select {typeOf _x != "VR_3DSelector_01_default_F"};
-sleep (0.1);
+sleep (2);
 
 if (isServer) then {
 	_Obj setVariable ["Array",_Array,true];
@@ -35,6 +35,7 @@ _Obj addAction ["Reset",{
 		_unit setUnitLoadout (_Obj getVariable "Loadout");
 		_NPC = _NPC + [_unit];
 		_unit disableAI "ALL";
+		sleep(0.1);
 	} forEach _Array;
 	
 	_Obj setVariable ["NPC",_NPC,true];
